@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>HBD Pai</title>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="icon" href="resources/favicon.png" />
+  <link rel="icon" href="favicon.png" />
     <style>
         html {
   scroll-behavior: smooth;
@@ -154,19 +154,19 @@ body {
 
     </style>
 </head>
-<audio class="audio" src="resources/ultah.mp3" autoplay type="audio" loop></audio>
+<audio class="audio" src="ultah.mp3" autoplay type="audio" loop></audio>
 
 <body class="body">
   <div class="open">
     <div class="card">
       <h2>Ada surat buat kamu Pai</h2>
-      <img onclick="mulai()" src="resources/mail.png">
+      <img onclick="mulai()" src="mail.png">
       <h3>Tekan untuk membuka</h3>
     </div>
   </div>
 
   <div class="atas" id="atas">
-    <img onclick="mulai()" src="resources/ultah.png">
+    <img onclick="mulai()" src="ultah.png">
     <h2>Scroll ke bawah ya &#10083</h2>
   </div>
 
@@ -179,7 +179,7 @@ body {
   <p class="kartu-ucapan" data-aos="flip-right"><img src="resources/images.png"></p>
 
   <a onclick="tanya()" data-aos="zoom-out-down" class="tanya">
-    <img src="resources/makeawish.png" class="wish">
+    <img src="makeawish.png" class="wish">
     Click This image
   </a>
 
@@ -217,7 +217,7 @@ async function tanya() {
   var {
     value: kado
   } = await swal.fire({
-    imageUrl: 'resources/pai.jpeg',
+    imageUrl: 'pai.jpeg',
     title: 'Di hari spesial ini, kamu ingin apa?',
     input: 'text',
     showCancelButton: false
@@ -225,7 +225,7 @@ async function tanya() {
 
   if (kado) {
     await swal.fire({
-      imageUrl: 'resources/wa.png',
+      imageUrl: 'wa.png',
       title: 'Kirim jawabannya ke wa aku ya'
     });
     wa(kado);
